@@ -11,8 +11,15 @@
 $nome = "Christian";
 $idade = "37";
 
-
 ?>
+
+<h1>nome: <?= $nome ?></h1>;
+<p> idade: <?= $idade ?> </p>;
+    if ($idade >= 18) {
+        $status = "Maior de idade";
+    } else {
+        $status = "Menor de idade";
+    }
 
 
 
