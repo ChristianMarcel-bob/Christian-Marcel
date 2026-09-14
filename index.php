@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +7,7 @@
 </head>
 <body>
     <?php
-echo "<h1>Aula inicial teste</h1>";
+echo "<h1>Aula inicial</h1>";
 
 ?>
 
