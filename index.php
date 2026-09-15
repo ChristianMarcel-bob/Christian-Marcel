@@ -10,7 +10,7 @@
         if ($idade >= 18) {
             $status = "Maior de idade";
         } else {
-            $status = "Menor de idade";
+            $resultado = "Menor de idade";
         }
     } //O IF ESTÁ PERGUNTANDO SE O FORMULÁRIO TEM MÉTODO DE POST
 ?>
@@ -35,7 +35,7 @@
             </div>
             <button type="submit">Atualizar</button>
         </form>
-        
+
         <?php if ($resultado != "") { ?>
             <p><?= $resultado ?></p>
         <?php } ?>
