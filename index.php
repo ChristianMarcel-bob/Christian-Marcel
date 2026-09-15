@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +7,42 @@
 </head>
 <body>
     <?php
+    $nome = "Christian";
+    $idade = 37;
 
-$nome = "Christian";
-$idade = "37";
-if ($idade >= 18) {
+    if ($idade >= 18) {
         $status = "Maior de idade";
-    } 
-    else {
+    } else {
         $status = "Menor de idade";
     }
-?>
+    ?>
+  
+    <h1>Nome: <?= $nome ?></h1>
+    <p>Idade: <?= $idade ?></p>
+    <p>Status: <?= $status ?></p>
 
-<h1>nome: <?= $nome ?></h1>;
-<p> idade: <?= $idade ?> </p>;
-<p> status: <?= $status ?> </p>;
-    
+ 
+    <h2>atualizar cadastro</h2>
+    <form action="christian marcel"></form>
+
+        <div>
+            <label for="nome">christian marcel:</label>
+            <input type="text" id="nome" name="nome" value="<?= $nome?>">
+
+            </div>
+        
+        <div>
+            <label for="idade">alterar idade:</label>
+            <input type="number" id="idade" name="idade" value="<?= $idade ?>">
+        </div>
+
+        <button type="submit">Salvar Alterações</button>
+    </form>
+
+</body>
+</html>
+
+
 
 
 </body>

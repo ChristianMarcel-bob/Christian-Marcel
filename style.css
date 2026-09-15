@@ -15,21 +15,13 @@
         }
         .card {
             background-color: aquamarine;
-            padding: 2rem;
-            border-radius: 10px; /* Corrigido: adicionado 'px' */
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Corrigido: especificado os valores da sombra */
+            padding: 2%;
+            border-radius: 10;
+            box-shadow: inset;
             text-align: center;
-            max-width: 400px;
+
         }
-    </style>
-</head>
-<body>
+        
+        
 
-    <!-- Conteúdo visível da página -->
-    <div class="card">
-        <h1>Bem-vindo à Aula Inicial!</h1>
-        <p>Este é o seu primeiro componente estilizado com CSS Grid.</p>
-    </div>
 
-</body>
-</html>
