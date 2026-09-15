@@ -15,14 +15,19 @@
         }
         .card {
             background-color: aquamarine;
-            padding: 2%;
-            border-radius: 10;
-            box-shadow: inset;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
-
         }
-        
-        
-        
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Aula Inicial</h1>
+    </div>
+</body>
+</html>
+
 
 

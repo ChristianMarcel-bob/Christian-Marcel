@@ -36,7 +36,7 @@
             <button type="submit">Atualizar</button>
         </form>
 
-        <?php if ($resultado != "") { ?>
+        <?php if ($resultado != "18") { ?>
             <p><?= $resultado ?></p>
         <?php } ?>
 
