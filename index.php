@@ -23,18 +23,19 @@
         <title>Aula inicial teste</title>
     </head>
     <body>
-        <h2>atualizar cadastro</h2>
+        <h2>Atualizar cadastro</h2>
         <form method="POST">
             <div>
-                <label for="nome">christian marcel:</label>
+                <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" value="<?= $nome?>">
             </div>
             <div>
-                <label for="idade">alterar idade:</label>
+                <label for="idade">Idade:</label>
                 <input type="number" id="idade" name="idade" value="<?= $idade ?>">
             </div>
             <button type="submit">Atualizar</button>
         </form>
+        
         <?php if ($resultado != "") { ?>
             <p><?= $resultado ?></p>
         <?php } ?>
