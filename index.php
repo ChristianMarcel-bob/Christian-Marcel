@@ -23,7 +23,7 @@
 
  
     <h2>atualizar cadastro</h2>
-    <form action="christian marcel"></form>
+    <form method="POST">
 
         <div>
             <label for="nome">christian marcel:</label>
@@ -36,7 +36,6 @@
             <input type="number" id="idade" name="idade" value="<?= $idade ?>">
         </div>
 
-        <button type="submit">Salvar Alterações</button>
     </form>
 
 </body>
