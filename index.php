@@ -10,11 +10,27 @@
     $nome = "Christian";
     $idade = 37;
 
+
+    $nome="";
+    $idade=0;
+    $resultado="";
+    if ($_SERVER["REQUEST_METHOD"] =="POST"){
+        $nome = $_POST["nome"];
+        $idade = $_POST["idade"];
+
+
     if ($idade >= 18) {
         $status = "Maior de idade";
     } else {
         $status = "Menor de idade";
     }
+
+
+
+ } //O IF ESTÁ PERGUNTANDO SE O FORMULÁRIO TEM MÉTODO DE POST
+
+
+
     ?>
   
     <h1>Nome: <?= $nome ?></h1>
@@ -35,8 +51,17 @@
             <label for="idade">alterar idade:</label>
             <input type="number" id="idade" name="idade" value="<?= $idade ?>">
         </div>
+          
+        <button type="submit">Atualizar</button>
 
     </form>
+
+
+    <?php if ($resultado != "") { ?>
+        
+
+
+    <?php } ?>
 
 </body>
 </html>
