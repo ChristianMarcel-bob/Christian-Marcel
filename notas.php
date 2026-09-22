@@ -8,7 +8,7 @@
 <body>
 
 <h1>Cadastro e situacao do aluno</h1>
-<form method= "POST" action= "">
+<form method= "POST">
     <label> Nome do aluno:</label>
     <imput type="text" name="nome" required>
         <br><br>
@@ -65,7 +65,7 @@ $media = (
 
 if ($media >= 7) {
 
-$situacao = "APROVADO";
+    $situacao = "APROVADO";
 }
 
 elseif ($media >=5) {
@@ -74,7 +74,7 @@ elseif ($media >=5) {
 
 else {
 
-$situacao = "REPROVADO";
+    $situacao = "REPROVADO";
 
 }
 
@@ -85,9 +85,11 @@ echo "<p><strong>Idade:</strong> $idade</>";
 echo "<p><strong>Média:</strong>" . number_format ($media, 2, ', ', ', ') ."</p>";
 echo "<p><strong>Situacao: </strong> $situacao</p>";
 
-
-
 }
+
+?>
+
+
     
 </body>
 </html>
