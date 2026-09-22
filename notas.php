@@ -48,18 +48,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 $nome = $_POST["nome"];
 $idade = $_POST["idade"];
 
-$nota 1= $_POST["nota 1"];
-$nota 2= $_POST["nota 2"];
-$nota 3= $_POST["nota 3"];
-$nota 4= $_POST["nota 4"];
-$nota 5= $_POST["nota 5"];
+$nota1= $_POST["nota 1"];
+$nota2= $_POST["nota 2"];
+$nota3= $_POST["nota 3"];
+$nota4= $_POST["nota 4"];
+$nota5= $_POST["nota 5"];
 
 $media = (
-($nota 1 * 2) +
-($nota 2 * 3) +
-($nota 3 * 1) +
-($nota 4 * 1) +
-($nota 5 * 3) +
+($nota1 * 2) +
+($nota2 * 3) +
+($nota3 * 1) +
+($nota4 * 1) +
+($nota5 * 3) 
 
 ) / 10;
 
