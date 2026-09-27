@@ -10,7 +10,7 @@
 <h1>Cadastro e situacao do aluno</h1>
 <form method= "GET" action="">
     <label>Nome do aluno:</label>
-    <imput type ="text" name="nome" required>
+    <input type ="text" name="nome" required>
         <br><br>
 
         <label>Idade:</label>
@@ -18,7 +18,7 @@
         <br><br>
 
         <label> Nota 1:</label>
-        <input type= "number" name="nota 1" min="0" max="10" step= "0.01" required>
+        <input type= "number" name="nota1" min="0" max="10" step= "0.01" required>
         <br><br>
 
         <label>Nota 2:</label>
@@ -46,20 +46,20 @@ if($_SERVER["REQUEST_METHOD"] == "GET") {
 $nome = $_GET["nome"];
 $idade= $_GET["idade"];
 
-$nota 1= $_GET["nota 1"];
-$nota 2= $_GET["nota 2"];
-$nota 3= $_GET["nota 3"];
-$nota 4= $_GET["nota 4"];
-$nota 5= $_GET["nota 5"];
+$nota1= $_GET["nota 1"];
+$nota2= $_GET["nota 2"];
+$nota3= $_GET["nota 3"];
+$nota4= $_GET["nota 4"];
+$nota5= $_GET["nota 5"];
 
 $media = (
-($nota 1 * 2) +
-($nota 2 * 3) +
-($nota 3 * 1) +
-($nota 4 * 1) +
-($nota 5 * 3) +
+($nota1 * 2) +
+($nota2 * 3) +
+($nota3 * 1) +
+($nota4 * 1) +
+($nota5 * 3) 
 
-) / 10;
+ )/10;
 
 if ($media >= 7) {
 
@@ -80,8 +80,8 @@ echo "<h2>Resultado</h2>";
 
 echo "<p><strong>Nome:</strong> $nome</p>";
 echo "<p><strong>Idade:</strong> $idade</p>";
-echo "<p><strong>Média:</strong> . number_format ($media,2,',',') . </p>;
-echo "<p><strong>Situacao:</strong> $situacao </p>;
+echo "<p><strong>Média:</strong> " . number_format($media, 2, ',', '.') . "</p>";
+echo "<p><strong>Situacao:</strong> $situacao </p>";
 
 }
 ?>
