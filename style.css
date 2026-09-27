@@ -1,33 +1,19 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula Inicial</title>
-    <style>
-        body {
-            font-family: system-ui, sans-serif;
-            background: #f0f2f5;
-            display: grid;
-            place-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .card {
-            background-color: aquamarine;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <div class="card">
-        <h1>Aula Inicial</h1>
-    </div>
-</body>
-</html>
+body {
+    font-family: system-ui, sans-serif;
+    background: #f0f2f5;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: aquamarine;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
 
 
