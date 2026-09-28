@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["enviar"])) {
     $nome = $_POST["nome"];
     $idade = $_POST["idade"];
 
-    // Conversão direta dos valores recebidos para números decimais (float)
+
     $nota1 = (float) $_POST["nota1"];
     $nota2 = (float) $_POST["nota2"];
     $nota3 = (float) $_POST["nota3"];
@@ -56,7 +56,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["enviar"])) {
 
     $media = (($nota1 * 2) + ($nota2 * 3) + ($nota3 * 1) + ($nota4 * 1) + ($nota5 * 3)) / 10;
 
-    // Verificação da situação
     if ($media >= 7) {
         $situacao = "APROVADO";
     } elseif ($media >= 5) {
