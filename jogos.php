@@ -1,0 +1,74 @@
+
+ <?php
+
+require "conexao.php";
+
+// Criar a tabela jogos
+$sql = "CREATE TABLE IF NOT EXISTS jogos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100),
+    genero VARCHAR(50),
+    nota INT
+)";
+
+$pdo->exec($sql);
+
+//verificar se o arquivo foi enviado
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $nome = $_POST["nome"];
+    $genero = $_POST["genero"];
+    $nota = $_POST["nota"];
+
+    
+    $sql = "INSERT INTO jogos (nome, genero, nota)
+            VALUES ('$nome', '$genero', '$nota')";
+
+    $pdo->exec($sql);
+
+    echo "<p>Jogo cadastrado com sucesso!</p>";
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Jogos</title>
+</head>
+<body>
+
+    <h1>Cadastro de Jogos</h1>
+
+    <form method="POST" action="">
+
+        <label for="nome">Nome do jogo:</label>
+        <input type="text" name="nome" id="nome" required>
+
+        <br><br>
+
+        <label for="genero">Gênero:</label>
+        <input type="text" name="genero" id="genero" required>
+
+        <br><br>
+
+        <label for="nota">Nota:</label>
+        <input type="number" name="nota" id="nota" min="0" max="10" required>
+
+        <br><br>
+
+        <button type="submit">Cadastrar</button>
+
+    </form>
+
+</body>
+</html>
+
+
+
+
+
+</body>
+</html>
+
