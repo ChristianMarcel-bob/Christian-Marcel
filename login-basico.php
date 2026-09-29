@@ -1,3 +1,29 @@
+<?php
+
+$usuarioCorreto = "admin";
+$senhaCorreta = "1234";
+
+$mensagem = "";
+
+if ($_SERVER ["REQUEST_METHOD"] == "POST") {
+$usuario = $_POST["usuario"];
+$senha = $_POST["senha"];
+
+if ($usuario == $usuarioCorreto && $senha == $senhaCorreta) {
+    $mensagem = "login realizado";
+
+}
+
+else {
+    $mensagem = "usuario ou senha incorretos";
+}
+
+
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,31 +57,5 @@
 
 </body>
 </html>
-
-<?php
-
-$usuarioCorreto = "admin";
-$senhaCorreta = "1234";
-
-$mensagem = "";
-
-if ($_SERVER ["REQUEST_METHOD"]) == "POST") {
-$usuario = $_POST["usuario"];
-$senha = $_POST["senha"];
-
-if ($usuario == $usuarioCorreto && $senha == $senhaCorreta) {
-    $mensagem = "login realizado";
-
-}
-
-else {
-    $mensagem = "usuario ou senha incorretos";
-}
-
-
-
-}
-
-?>
 
 
