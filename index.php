@@ -30,7 +30,8 @@ echo "<br>Tabela criada com sucesso!";
     <br>
     <a href="idade.php">Verificador de idade</a><br>
     <a href="notas.php">Verificador de notas</a><br>
-    <a href="login-basico.php">login basico</a>
+    <a href="login-basico.php">login basico</a><br>
+    <a href="jogos.php">jogo executavel</a>
 </body>
 
 </html>
