@@ -16,9 +16,9 @@ echo "Meu sistema está conectado!";
     <title>Document</title>
 </head>
 <body>
-
-<a href="idade.php">Verificador de idade</a>
-<a href="notas.php">Verificador de notas</a>
+<br>
+<a href="idade.php">Verificador de idade</a><br>
+<a href="notas.php">Verificador de notas</a><br>
 <a href="login-basico.php">login basico</a>
     
 </body>
