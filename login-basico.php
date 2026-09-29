@@ -44,9 +44,9 @@ else {
             <input type="text" id="usuario" name="usuario" required>
 
             <label for="senha">Senha:</label>
-            <br>
+            <br><br>
             <input type="password" id="senha" name="senha" required>
-            <br>
+            <br><br>
 
             <button type="submit">Entrar</button>
         </form>
