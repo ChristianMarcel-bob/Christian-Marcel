@@ -1,3 +1,13 @@
+<?php
+
+require "conexao.php";
+
+echo "Meu sistema está conectado!";
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +19,7 @@
 
 <a href="idade.php">Verificador de idade</a>
 <a href="notas.php">Verificador de notas</a>
+<a href="login-basico.php">login basico</a>
     
 </body>
 </html>
