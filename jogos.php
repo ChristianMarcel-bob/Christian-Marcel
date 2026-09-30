@@ -41,8 +41,6 @@ $stmt = $pdo->query($buscar);
 $jogos = $fetchALL(PDO::FETCH_ASSOC);
 
 
-
-
 ?>
 
 <!DOCTYPE html>
@@ -58,17 +56,17 @@ $jogos = $fetchALL(PDO::FETCH_ASSOC);
     <form method="POST" action="">
 
         <label for="nome">Nome do jogo:</label>
-        <input type="text" name="nome" id="nome" required>
+        <input type="text" name="nome" id="nome" placeholder="Digite o nome do jogo">
 
         <br><br>
 
         <label for="genero">Gênero:</label>
-        <input type="text" name="genero" id="genero" required>
+        <input type="text" name="genero" id="genero" placeholder = "Digite o genero" required>
 
         <br><br>
 
         <label for="nota">Nota:</label>
-        <input type="number" name="nota" id="nota" min="0" max="10" required>
+        <input type="number" name="nota" id="nota" min="0" max="10" placeholder="Digite a nota do jogo">
 
         <br><br>
 
