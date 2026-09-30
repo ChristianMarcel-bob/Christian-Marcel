@@ -12,6 +12,8 @@ $sql = "CREATE TABLE IF NOT EXISTS jogos (
     nota INT
 )";
 
+$senha ="cgdm";
+
 $pdo->exec($sql);
     // echo "debug 2";
 
@@ -77,7 +79,7 @@ $jogos = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <br><br>
 
         <label for="senha">Senha:</label>
-        <input type="number" name="senha" id="senha" min="0" max="10" placeholder="Digite a senha">
+        <input type="password" name="senha" id="senha" placeholder="Digite a senha">
 
         <button type="submit">Cadastrar</button>
 
