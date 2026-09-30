@@ -76,6 +76,33 @@ $jogos = $fetchALL(PDO::FETCH_ASSOC);
 
     </form>
 
+    <h2>JOGOS CADASTRADOS</h2>
+    <table>
+
+<tr>
+
+<th>ID</th>
+<th>Nome</th>
+<th>Genero</th>
+<th>Nota</th>
+
+
+</tr>
+
+<!--foreach() -> para cada item nesta lista faça alguma coisa com x variável
+<?php foreach($jogos as $jogo) { ?>
+
+<tr>
+    <td><?= $jogo ["id"] ?></td>
+    <td><?= $jogo["nome"] ?></td>
+    <td><?= $jogo["genero"] ?></td>
+    <td><?= $jogo["nota"] ?></td>
+</tr>
+<?php }  ?>
+
+
+    </table>
+
 </body>
 </html>
 
