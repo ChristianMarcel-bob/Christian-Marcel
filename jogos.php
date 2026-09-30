@@ -13,7 +13,7 @@ $sql = "CREATE TABLE IF NOT EXISTS jogos (
 )";
 
 $pdo->exec($sql);
-    echo "debug 2";
+    // echo "debug 2";
 
 //verificar se o arquivo foi enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -23,9 +23,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $genero = $_POST["genero"];
     $nota = $_POST["nota"];
 
-
-    $sql = "INSERT INTO jogos (nome, genero, nota)
-            VALUES ('$nome', '$genero', $nota)";
+// insert into = inserir dentro
+    $sql = "INSERT INTO jogos (nome, genero, nota) VALUES ('$nome', '$genero', $nota)";
 
     $pdo->exec($sql);
     echo "debug 4";
