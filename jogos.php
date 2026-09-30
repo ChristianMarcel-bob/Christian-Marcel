@@ -29,6 +29,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "<p>Jogo cadastrado com sucesso!</p>";
 }
 
+// buscar todos
+
+$buscar = "SELECT * FROM jogos";
+
+//exec()  = executa algo quando vc nao precisa receber registros de volta.
+// query() = executa uma consulta quando vc quer receber dados de volta.
+
+$stmt = $pdo->query($buscar);
+
+$jogos = $fetchALL(PDO::FETCH_ASSOC);
+
+
+
+
 ?>
 
 <!DOCTYPE html>
