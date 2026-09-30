@@ -22,6 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST["nome"];
     $genero = $_POST["genero"];
     $nota = $_POST["nota"];
+    $senha = $_POST["senha"];
 
 // insert into = inserir dentro
     $sql = "INSERT INTO jogos (nome, genero, nota) VALUES ('$nome', '$genero', $nota)";
@@ -75,6 +76,9 @@ $jogos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         <br><br>
 
+        <label for="senha">Senha:</label>
+        <input type="number" name="senha" id="senha" min="0" max="10" placeholder="Digite a senha">
+
         <button type="submit">Cadastrar</button>
 
     </form>
@@ -116,3 +120,5 @@ $jogos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 </body>
 </html>
+
+
