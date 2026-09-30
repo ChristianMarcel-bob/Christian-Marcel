@@ -39,7 +39,6 @@ $stmt = $pdo->query($buscar);
 
 $jogos = $fetchALL(PDO::FETCH_ASSOC);
 
-
 ?>
 
 <!DOCTYPE html>
@@ -76,6 +75,7 @@ $jogos = $fetchALL(PDO::FETCH_ASSOC);
     </form>
 
     <h2>JOGOS CADASTRADOS</h2>
+    
     <table>
 
         <tr>
