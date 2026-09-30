@@ -88,7 +88,7 @@ $jogos = $fetchALL(PDO::FETCH_ASSOC);
 
         </tr>
 
-        <!--foreach() -> para cada item nesta lista faça alguma coisa com x variável
+        <!--foreach() -> para cada item nesta lista faça alguma coisa com x variável -->
 <?php foreach ($jogos as $jogo) { ?>
 
 <tr>
