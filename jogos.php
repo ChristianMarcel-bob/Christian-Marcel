@@ -1,5 +1,4 @@
-
- <?php
+<?php
 
 require "conexao.php";
 
@@ -20,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $genero = $_POST["genero"];
     $nota = $_POST["nota"];
 
-    
+
     $sql = "INSERT INTO jogos (nome, genero, nota)
             VALUES ('$nome', '$genero', $nota)";
 
@@ -45,10 +44,12 @@ $jogos = $fetchALL(PDO::FETCH_ASSOC);
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>Cadastro de Jogos</title>
 </head>
+
 <body>
 
     <h1>Cadastro de Jogos</h1>
@@ -61,7 +62,7 @@ $jogos = $fetchALL(PDO::FETCH_ASSOC);
         <br><br>
 
         <label for="genero">Gênero:</label>
-        <input type="text" name="genero" id="genero" placeholder = "Digite o genero" required>
+        <input type="text" name="genero" id="genero" placeholder="Digite o genero" required>
 
         <br><br>
 
@@ -77,21 +78,21 @@ $jogos = $fetchALL(PDO::FETCH_ASSOC);
     <h2>JOGOS CADASTRADOS</h2>
     <table>
 
+        <tr>
+
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Genero</th>
+            <th>Nota</th>
+
+
+        </tr>
+
+        <!--foreach() -> para cada item nesta lista faça alguma coisa com x variável
+<?php foreach ($jogos as $jogo) { ?>
+
 <tr>
-
-<th>ID</th>
-<th>Nome</th>
-<th>Genero</th>
-<th>Nota</th>
-
-
-</tr>
-
-<!--foreach() -> para cada item nesta lista faça alguma coisa com x variável
-<?php foreach($jogos as $jogo) { ?>
-
-<tr>
-    <td><?= $jogo ["id"] ?></td>
+    <td><?= $jogo["id"] ?></td>
     <td><?= $jogo["nome"] ?></td>
     <td><?= $jogo["genero"] ?></td>
     <td><?= $jogo["nota"] ?></td>
@@ -110,4 +111,3 @@ $jogos = $fetchALL(PDO::FETCH_ASSOC);
 
 </body>
 </html>
-
