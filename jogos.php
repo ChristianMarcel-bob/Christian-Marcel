@@ -1,6 +1,8 @@
 <?php
 
+    echo "debug 1";
 require "conexao.php";
+    echo "debug 1";
 
 // Criar a tabela jogos
 $sql = "CREATE TABLE IF NOT EXISTS jogos (
@@ -11,9 +13,11 @@ $sql = "CREATE TABLE IF NOT EXISTS jogos (
 )";
 
 $pdo->exec($sql);
+    echo "debug 2";
 
 //verificar se o arquivo foi enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    echo "debug 3";
 
     $nome = $_POST["nome"];
     $genero = $_POST["genero"];
@@ -24,6 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             VALUES ('$nome', '$genero', $nota)";
 
     $pdo->exec($sql);
+    echo "debug 4";
 
     echo "<p>Jogo cadastrado com sucesso!</p>";
 }
@@ -36,8 +41,9 @@ $buscar = "SELECT * FROM jogos";
 // query() = executa uma consulta quando vc quer receber dados de volta.
 
 $stmt = $pdo->query($buscar);
+    echo "debug 5";
 
-$jogos = $fetchALL(PDO::FETCH_ASSOC);
+$jogos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 
