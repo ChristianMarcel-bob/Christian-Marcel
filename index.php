@@ -1,6 +1,6 @@
 <?php
 
-require "conexao.php";
+require __DIR__ ."/../conexao.php";
 
 echo "Meu sistema está conectado!";
 
@@ -28,10 +28,10 @@ echo "<br>Tabela criada com sucesso!";
 
 <body>
     <br>
-    <a href="idade.php">Verificador de idade</a><br>
-    <a href="notas.php">Verificador de notas</a><br>
-    <a href="login-basico.php">login basico</a><br>
-    <a href="jogos.php">jogo executavel</a>
+    <a href="projetos/idade.php">Verificador de idade</a><br>
+    <a href="projetos/notas.php">Verificador de notas</a><br>
+    <a href="projetos/login-basico.php">login basico</a><br>
+    <a href="projetos/jogos.php">jogo executavel</a>
 </body>
 
 </html>

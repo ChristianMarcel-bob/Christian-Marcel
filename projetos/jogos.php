@@ -1,7 +1,7 @@
 <?php
 
     echo "debug 1";
-require "conexao.php";
+require __DIR__ ."/../conexao.php";
     echo "debug 1";
 
 // Criar a tabela jogos
