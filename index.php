@@ -65,8 +65,38 @@ Ver meus projetos
 
 </div>
 
+<div class="sobre-texto">
+
+<h3>Quem sou eu?</h3>
+
+<p>
+
+Meu nome é Christian Marcel e sou aluno de Desenvolvimento de Sistemas.
+
+</p>
+
+<p>
+
+Atualmente estou aprendendo Desenvolvimento Web, programação e criação de sistemas.
+Este portfólio reúne alguns dos projetos desenvolvidos durante o curso.
+
+</p>
+
+<p>
+
+Meu objetivo é continuar evoluindo como aluno,
+tanto no aprendizado e absorção de conteúdo quanto para desenvolver novas tecnologias.
+
+
+</p>
+
+
+</div>
+
 
 </main>
+
+
 
 
 </body>
