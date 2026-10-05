@@ -93,6 +93,71 @@ tanto no aprendizado e absorção de conteúdo quanto para desenvolver novas tec
 
 </div>
 
+</section>
+
+<section id="habilidades" class="secao secao-destaque">
+<h2> class="titulo-secao">Minhas habilidades</h2>
+<p class="subtitulo-secao">A
+Algumas tecnologias que estou estudando:
+
+</p>
+<div class="lista-habilidades">
+<div class="habilidades">
+    HTML
+</div>
+<div class="habilidade">
+
+css
+
+</div>
+
+<div class="habilidade">
+PHP
+
+</div>
+
+
+
+</div>
+
+
+</section>
+<section id="projetos" class="secao">
+<h1 class="titulo-secao">Meus projetos</h1>
+<p>class="subtitulo-secao">Alguns projetos desenvolvidos durantes as aulas</p>
+
+<div class="projetos-container">
+
+<div class="projeto-card">
+<div class="projeto-numero">
+    01
+</div>
+<h3>Verificacao de idade</h3>
+
+<p>
+
+Sistema desenvolvido para praticar formularios e manipulacao de dados.
+
+</p>
+<div class="tecnologia">
+
+<span><HTML</span>
+<span>CSS</span>
+<span>PHP</span>
+
+</div>
+<a href="projetos/idade.php" class="link-projeto">
+Ver projeto ->
+
+</a>
+
+
+
+</div>
+
+
+</section>
+
 
 </main>
 
