@@ -182,7 +182,7 @@ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
 transform: translateY(-3px);
 
 }
-
+   
 /* PROJETOS */
 
 .projetos-container {
@@ -194,6 +194,139 @@ gap: 25px;
 
 }
 
+.projeto-card {
+
+
+    background-color: white;
+    padding: 30px;
+border-radius: 10px;
+box-shadow: 0 3px 12px black;
+transition: 0.3s;
+}
+
+.projeto-card:hover {
+
+transform: translateY(-5px);
+box-shadow: 0 8px  20px rgba(0, 0, 0, 0.15);
+
+
+}
+
+.projeto-numero {
+
+font-size: 35px;
+font-weight: bold;
+color: #2563eb;
+margin-bottom: 15px;
+
+}
+
+.projeto-card h3 {
+
+font-size: 22px;
+margin-bottom: 10px;
+
+}
+
+.projeto-card p {
+
+color: gray;
+margin-bottom: 20px;
+
+}
+
+/* TECNOLOGIAS UTILIZADAS */
+
+.tecnologias {
+
+
+display: flex;
+gap: 8px;
+flex-wrap: wrap;
+margin-bottom: 20px;
+
+}
+
+.tecnologias span {
+
+    background-color: aliceblue;
+    color: #1d4ed8;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
 
 
 
+}
+
+/* Link do projeto */
+
+.link-projeto {
+
+color: #2563eb;
+text-decoration: none;
+font-weight: bold;
+
+
+}
+
+.link-projeto:hover {
+
+text-decoration: underline;
+
+}
+
+/* ========CONTATO ==========*/
+
+.contato-container {
+
+
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+
+}
+
+.contato-item {
+
+background-color: white;
+width: 280px;
+padding: 25px;
+text-align: center;
+border-radius: 8px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+
+
+
+}
+
+
+.contato-item h3 {
+
+color: #2563eb;
+margin-bottom: 5px;
+
+
+}
+
+
+/*=====================================
+RODAPÉ
+=======================================*/
+
+
+
+footer {
+
+
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/*=================================
+RESPONSIVIDADE
+==============================*/
