@@ -1,0 +1,149 @@
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+
+}
+
+html {
+
+scroll-behavior: smooth;
+
+
+}
+
+body {
+
+font-family: Arial, Helvetica, sans-serif;
+background-color: #f5f5f5;
+color: black;
+
+}
+
+header {
+
+background-color: #111827;
+position: auto;
+top: 0;
+z-index: 100;
+
+
+}
+
+.navbar {
+
+
+max-width: 1100px;
+margin: auto;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.logo {
+
+color: white;
+
+}
+
+.menu {
+
+
+    display: flex;
+    gap: 25px;
+    list-style: none;
+
+}
+
+.menu a {
+
+
+color: lightblue;
+text-decoration: none;
+font-weight: bold;
+
+
+}
+
+.menu a:hover {
+
+color: lightblue;
+
+
+}
+
+.pagina-projeto {
+
+min-height: calc(100vh - 150px);
+min-width: 1100px;
+margin: auto;
+padding: 60px 20px 80px;
+}
+
+.cabeçalho-projeto {
+
+
+    margin-bottom: 40px;
+}
+
+projeto-tipo {
+
+color: lightblue;
+font-size: 16px;
+font-weight: bold;
+text-transform: uppercase;
+margin-bottom: 5px;
+
+
+
+}
+
+.cabeçalho-projeto h1 {
+
+font-size: 40px;
+color: #111827;
+
+
+}
+
+.cabeçalho-projeto > p:not(.projeto-tipo) {
+
+color: #66666666;
+font-size: 18px;
+max-width: 700px;
+
+
+}
+
+/* rodape*/
+
+footer {
+
+background-color: #111827;
+color: #ccc;
+text-align: center;
+padding: 30px;
+
+}
+
+footer a {
+
+
+color: #60a5fa;
+text-decoration: none;
+
+
+}
+
+footer a:hover {
+
+text-decoration: underline;
+
+
+}
+
+
