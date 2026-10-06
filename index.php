@@ -21,10 +21,10 @@
 
         <ul class="menu">
             <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre">Inicio</a></li>
-            <li><a href="#habilidades">Inicio</a></li>
-            <li><a href="#projetos">Inicio</a></li>
-            <li><a href="#contato">Inicio</a></li>
+            <li><a href="#sobre">sobre</a></li>
+            <li><a href="#habilidades">habilidades</a></li>
+            <li><a href="#projetos">projetos</a></li>
+            <li><a href="#contato">contato</a></li>
 
 
         </ul>
