@@ -1,0 +1,30 @@
+[
+    {
+        "nome": "Christian",
+        "idade": 37,
+        "curso": "Desenvolvimento de sistemas",
+        "notas": {
+            "iot": {
+                "avaliacao 1": 7,
+                "avaliacao 2": 8,
+                "avaliacao 3": 7
+            }
+        }
+    },
+    {
+
+"nome": "Ana",
+"idade": 18,
+"curso": "Administracao"
+
+    },
+
+{
+"nome": "joão",
+"idade": 12,
+"curso": "Ensino fundamental"
+
+}
+
+
+]
