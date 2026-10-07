@@ -1,16 +1,15 @@
 <?php
 
 // 1. DECLARAR O CAMINHO DO ARQUIVO JSON
-
 $caminho = __DIR__ . "/dados.json";
+
 // 2. ABRIR/LER O ARQUIVO JSON
-$json = file_get_contents ($caminho);
+$json = file_get_contents($caminho);
 
 //3. TRANSFORMAR JSON EM ARRAY PHP
 $alunos = json_decode($json, true);
 
 //4. CRIAR UM ALUNO
-
 $novoAluno = [
 
 "nome" => "Christian",
@@ -21,13 +20,12 @@ $novoAluno = [
 ];
 
 // 5. ADICIONAR O ALUNO NO ARRAY
-$aluno[] = $novoAluno;
+$alunos[] = $novoAluno;
 
 // 6. TRANSFORMAR ARRAY PHP EM JSON
 $jsonAtualizado = json_encode($alunos,
 JSON_PRETTY_PRINT |
 JSON_UNESCAPED_UNICODE
-
 );
 
 //7. SALVAR NO ARQUIVO
