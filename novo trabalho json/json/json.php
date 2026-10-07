@@ -34,7 +34,7 @@ JSON_UNESCAPED_UNICODE
 file_put_contents($caminho, $jsonAtualizado);
 
 
-echo "DADOS REGISTRADOS EM dados.json"
+echo "DADOS REGISTRADOS EM dados.json";
 
 ?>
 
