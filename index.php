@@ -235,6 +235,34 @@
 
                 </div>
 
+                <!--projeto 5-->
+
+                <div class="projeto-card">
+                    <div class="projeto-numero">
+                        05
+                    </div>
+                    <h3>json</h3>
+
+                    <p>
+
+                        Sistema desenvolvido para validar desafio de notas linguagem php.
+
+                    </p>
+                    <div class="tecnologia">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>PHP</span>
+                        <span>JSON</span>
+
+                    </div>
+                    <a href="json/json.php" class="link-projeto">
+                        Ver projeto ->
+
+                    </a>
+
+                </div>
+
 
 
 
