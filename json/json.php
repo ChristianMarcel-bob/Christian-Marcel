@@ -182,7 +182,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <label>Nome:</label>
         <input type="text" name="nome">
-        <button> type="submit" name="acao" value="deletar">Deletar</button>
+        <button type="submit" name="acao" value="deletar">Deletar</button>
 
     </form>
 
