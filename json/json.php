@@ -11,7 +11,7 @@ $alunos = json_decode($json, true);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-}
+
 
 //4. CRIAR UM ALUNO
 $novoAluno = [
@@ -34,7 +34,7 @@ JSON_UNESCAPED_UNICODE
 
 //7. SALVAR NO ARQUIVO
 file_put_contents($caminho, $jsonAtualizado);
-
+}
 
 echo "DADOS REGISTRADOS EM dados.json";
 
