@@ -16,9 +16,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 //4. CRIAR UM ALUNO
 $novoAluno = [
 
-"nome" => "Christian",
-"idade" => 37,
-"curso" => "Desenvolvimento de sistemas"
+"nome" => $_POST["nome"],
+"idade" => $_POST["idade"],
+"curso" => $_POST["curso"],
 
 
 ];
@@ -45,7 +45,7 @@ echo "DADOS REGISTRADOS EM dados.json";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Teste formulario</title>
 </head>
 <body>
     
@@ -56,21 +56,21 @@ echo "DADOS REGISTRADOS EM dados.json";
             <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
         </div>
 
-        <br>
+        <br><br>
 
         <div>
             <label for="idade">Idade:</label>
             <input type="number" id="idade" name="idade" placeholder="Ex: 20" min="0" required>
         </div>
 
-        <br>
+        <br><br>
 
         <div>
             <label for="curso">Curso:</label>
             <input type="text" id="curso" name="curso" placeholder="Digite o nome do curso" required>
         </div>
 
-        <br>
+        <br><br>
 
         <button type="submit">Enviar Dados</button>
 
@@ -86,15 +86,4 @@ echo "DADOS REGISTRADOS EM dados.json";
 
 </body>
 
-
-
-
-
-
-
-
-
-
-    
-</body>
 </html>
