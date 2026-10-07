@@ -49,7 +49,6 @@ echo "DADOS REGISTRADOS EM dados.json";
 </head>
 <body>
     
-<form>
 <form action="/api/cadastro" method="POST">
         
         <div>
@@ -77,6 +76,18 @@ echo "DADOS REGISTRADOS EM dados.json";
 
 
 </form>
+
+<h2>ALUNOS CADASTRADOS</h2>
+<?php foreach($alunos as $aluno) { ?>
+<h3><?=  $aluno["nome"] ?></h3>
+<p>Idade: <?=  $aluno["idade"] ?></p>
+<p>Curso: <?=  $aluno["curso"] ?></p>
+<?php  }  ?>
+
+</body>
+
+
+
 
 
 
