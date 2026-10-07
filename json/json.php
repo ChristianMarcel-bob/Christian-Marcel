@@ -49,7 +49,7 @@ echo "DADOS REGISTRADOS EM dados.json";
 </head>
 <body>
     
-<form action="/api/cadastro" method="POST">
+<form method="POST">
         
         <div>
             <label for="nome">Nome:</label>
