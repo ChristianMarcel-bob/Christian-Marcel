@@ -11,6 +11,9 @@ $alunos = json_decode($json, true);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
+$acao = $_POST["acao"];
+
+if ($acao === "cadastrar") {
 
 
 //4. CRIAR UM ALUNO
@@ -34,6 +37,50 @@ JSON_UNESCAPED_UNICODE
 
 //7. SALVAR NO ARQUIVO
 file_put_contents($caminho, $jsonAtualizado);
+}
+
+if ($acao === "atualizar")  {
+
+// PEGAR OS DADOS DO FORMULARIO
+$nome = $_POST["nome"];
+$novaIdade = $_POST["idade"];
+$novoCurso = $_POST["curso"];
+
+// PERCORRER TODOS OS ALUNOS
+
+foreach($alunos as $posicao => $aluno)   {
+    if($aluno["nome"] == $nome) {
+
+$aluno[$posicao]["idade"] = $novaIdade;
+$aluno[$posicao]["curso"] = $novoCurso;
+
+
+    }
+
+
+
+
+}
+
+//TRANSFORMAR ARRAY PHP EM JSON
+
+$jsonAtualizado = json_encode(
+$alunos,
+
+JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
+
+);
+
+
+
+//SALVAR NO ARQUIVO
+
+file_put_contents($caminho, $jsonAtualizado);
+
+//
+
+}
+
 }
 
 echo "DADOS REGISTRADOS EM dados.json";
@@ -73,6 +120,36 @@ echo "DADOS REGISTRADOS EM dados.json";
         <br><br>
 
         <button type="submit">Enviar Dados</button>
+
+
+</form>
+
+
+
+<form method="POST">
+        
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+        </div>
+
+        <br><br>
+
+        <div>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" placeholder="Ex: 20" min="0" required>
+        </div>
+
+        <br><br>
+
+        <div>
+            <label for="curso">Curso:</label>
+            <input type="text" id="curso" name="curso" placeholder="Digite o nome do curso" required>
+        </div>
+
+        <br><br>
+
+        <button type="submit" name="action" value="atualizar">Atualizar</button>
 
 
 </form>
