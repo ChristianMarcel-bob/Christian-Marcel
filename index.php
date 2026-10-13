@@ -103,9 +103,12 @@
             </p>
 
             <div class="lista-habilidades">
-                <div class="habilidades">
+                <div class="habilidade">
+
                     HTML
+                    
                 </div>
+
 
                 <div class="habilidade">
 
