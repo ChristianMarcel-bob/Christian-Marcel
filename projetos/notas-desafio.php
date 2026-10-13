@@ -55,7 +55,7 @@ function e($v) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EducaPro | Notas</title>
+<title>SENAI| Notas</title>
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -87,8 +87,8 @@ footer{text-align:center;color:#64748b;font-size:12px;margin:25px 0}
 <body>
 <main>
     <header>
-        <h1>📚 EducaPro</h1>
-        <p>Cadastro e desempenho escolar</p>
+        <h1>📚 Senai - Desenvolvimento de sistemas</h1>
+        <p>Cadastro e desempenho academico</p>
     </header>
 
     <section class="card">
