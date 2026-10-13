@@ -144,7 +144,7 @@ footer{text-align:center;color:#64748b;font-size:12px;margin:25px 0}
         </section>
     <?php endif; ?>
 
-    <footer>EducaPro © <?= date("Y") ?> · PHP</footer>
+    <footer>Christian Marcel © <?= date("Y") ?> · PHP</footer>
 </main>
 </body>
 </html>
