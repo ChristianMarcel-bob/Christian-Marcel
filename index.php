@@ -50,7 +50,7 @@
                 <p>
 
                     Aluno em Desenvolvimento de Sistemas do Senai,
-                    motorista profissional da DHL,
+                    Motorista profissional da DHL,
                     Operador e programador de CNC na Bosch,
                     Cursado em Técnico de mecanica industrial.
 
