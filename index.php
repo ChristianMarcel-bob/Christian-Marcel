@@ -124,7 +124,7 @@
         </section>
         <section id="projetos" class="secao">
             <h1 class="titulo-secao">Meus projetos</h1>
-            <p>class="subtitulo-secao">Alguns projetos desenvolvidos durantes as aulas</p>
+            <p><strong> Projetos desenvolvidos durantes as aulas</strong></p>
 
             <div class="projetos-container">
 
