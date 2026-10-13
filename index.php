@@ -101,13 +101,15 @@
             <p class="subtitulo-secao"> Algumas tecnologias que estou estudando:
 
             </p>
+
             <div class="lista-habilidades">
                 <div class="habilidades">
                     HTML
                 </div>
+
                 <div class="habilidade">
 
-                    css
+                    CSS
 
                 </div>
 
