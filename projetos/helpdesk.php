@@ -1,4 +1,4 @@
-<php
+<?php
 require_once "helpdesk-func.php";
 
 $mensagem = "";
@@ -22,18 +22,34 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }
 
         if($acao === "cadastrar") {
-$sucesso = cadastrarChamados (
+$sucesso = cadastrarChamados(
+$_POST["nome"] ?? "",
+$_POST["setor"] ?? "",
+$_POST["equipamento"] ?? "",
+$_POST["descrição"] ?? "",
+$_POST["prioridade"] ?? ""
 
+);
+        
 
-    
-)
+$mensagem = $sucesso ? "chamado cadastrado com sucesso!" : "Erro ao cadastrar. Verifique aos dados.";
+        }
 
+        if ($acao === "atualizar") {
 
+$sucesso = atualizarChamado((int) ($_POST["posicao]" ?? -1), $_POST["status] ?? "");
         }
 
 
 
-    }
+
+    
 
 
-}
+        
+
+
+
+    
+
+
