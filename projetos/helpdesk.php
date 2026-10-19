@@ -40,6 +40,30 @@ $mensagem = $sucesso ? "chamado cadastrado com sucesso!" : "Erro ao cadastrar. V
 $sucesso = atualizarChamado((int) ($_POST["posicao]" ?? -1), $_POST["status] ?? "");
         }
 
+        if ($acao === "excluir") {
+
+$sucesso = excluirChamado((int) ($_POST["posicao"] ?? -1);
+
+$mensagem = $sucesso ? "Chamado excluido!" : "Não foi possivel excluir.";
+        }
+
+        $chamados = lerChamados();
+        $relatorio = gerarRelatorio();
+
+        // Evite exibir HTML enviado pelo usuario
+
+        function escapar($valor) {
+
+return htmlspecialchars((string) $valor, ENT_QUOTS, "UTF-8");
+        }
+?>
+
+        
+
+
+
+
+
 
 
 
