@@ -7,7 +7,7 @@
 
     <title>Portfolio Pessoal</title>
 
-    <link rel="stylesheet" href="resouces/css/index.css">
+    <link rel="stylesheet" href="resources/css/index.css">
 
 
 </head>
