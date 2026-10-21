@@ -12,7 +12,7 @@ return[
 //outras atividades...
 ],
 'POST' => [
-'helpdesk' => []
+//'helpdesk' => []
 
 ]
 
