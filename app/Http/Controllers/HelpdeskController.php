@@ -3,15 +3,5 @@
 class HelpdeskController
 {
 
-public function index()  {
-
-
-
-
+    public function index() {}
 }
-
-
-}
-
-
-?>
