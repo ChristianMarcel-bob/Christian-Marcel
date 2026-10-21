@@ -2,7 +2,7 @@
 // Carregando o arquivo de rotas e guardando o valor retornado por ele na variavel
 $rotas = require __DIR__ . "/routes/web.php";
 
-$rota = $_GET['roota'] ?? 'portfolio';
+$rota = $_GET['rota'] ?? 'portfolio';
 
 $metodo = $_SERVER['REQUEST_METHOD'];
 
