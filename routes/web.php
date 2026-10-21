@@ -6,7 +6,7 @@ require_once __DIR__ . '/../app/Http/Controllers/PortfolioController.php';
 
 return[
 'GET' =>[
-'portfolio' => [new portfolioController(), 'index'],
+'portfolio' => [new PortfolioController(), 'index'],
 //'helpdesk' => [new HelpdeskController(), 'index'],
 //'jogos' => [],
 //outras atividades...
