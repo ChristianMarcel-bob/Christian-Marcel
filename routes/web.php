@@ -6,12 +6,18 @@ php';
 
 
 return[
+'GET' =>[
+'portfolio' => [],
+'helpdesk' => [],
+'jogos' => [],
+//outras atividades...
+],
+'POST' => [
+'helpdesk' => []
 
-
+]
 
 ];
-
-
 
 
 
