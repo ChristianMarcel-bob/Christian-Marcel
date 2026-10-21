@@ -5,3 +5,4 @@ class HelpdeskController
 
     public function index() {}
 }
+?>
