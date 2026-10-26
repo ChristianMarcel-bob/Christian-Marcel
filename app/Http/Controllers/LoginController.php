@@ -5,6 +5,8 @@ class LoginController
 
     public function index()
     {
-        require __DIR__ . "/../../../resources/views/projeto/login.php";
+        require __DIR__ . "/../../../resources/views/projetos/login-basico.php";
     }
 }
+
+?>

@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . "/../../../conexao.php";
+require __DIR__ . "/../../../config/conexao.php";
 
 $pdo->exec("CREATE TABLE IF NOT EXISTS jogos (
     id INT PRIMARY KEY AUTO_INCREMENT,
