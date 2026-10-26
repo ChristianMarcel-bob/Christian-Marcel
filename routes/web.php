@@ -5,6 +5,7 @@ require_once __DIR__ . '/../app/Http/Controllers/PortfolioController.php';
 require_once __DIR__ . '/../app/Http/Controllers/JogosController.php';
 require_once __DIR__ . '/../app/Http/Controllers/LoginController.php';
 require_once __DIR__ . '/../app/Http/Controllers/NotasController.php';
+require_once __DIR__ . '/../app/Http/Controllers/NotasController.php';
 
 
 return [
