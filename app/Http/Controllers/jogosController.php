@@ -1,6 +1,6 @@
 <?php
 
-class jogosController
+class JogosController
 {
 
 public function index() {

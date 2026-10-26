@@ -179,7 +179,7 @@
                         <span>PHP</span>
 
                     </div>
-                    <a href="/index.php?rota=jogos.php" class="link-projeto">
+                    <a href="/index.php?rota=jogos" class="link-projeto">
                         Ver projeto ->
 
                     </a>
@@ -206,7 +206,7 @@
                         <span>PHP</span>
 
                     </div>
-                    <a href="projetos/login-basico.php" class="link-projeto">
+                    <a href="/index.php?rota=login" class="link-projeto">
                         Ver projeto ->
 
                     </a>
@@ -233,7 +233,7 @@
                         <span>PHP</span>
 
                     </div>
-                    <a href="projetos/notas-desafio.php" class="link-projeto">
+                    <a href="/index.php?rota=notas" class="link-projeto">
                         Ver projeto ->
 
                     </a>
