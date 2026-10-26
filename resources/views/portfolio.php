@@ -152,7 +152,7 @@
                         <span>PHP</span>
 
                     </div>
-                    <a href="/idade.php?rota=idade" class="link-projeto">
+                    <a href="/index.php?rota=idade" class="link-projeto">
                         Ver projeto ->
 
                     </a>
