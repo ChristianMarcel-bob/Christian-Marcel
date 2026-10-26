@@ -179,7 +179,7 @@
                         <span>PHP</span>
 
                     </div>
-                    <a href="projetos/jogos.php" class="link-projeto">
+                    <a href="/index.php?rota=jogos.php" class="link-projeto">
                         Ver projeto ->
 
                     </a>
