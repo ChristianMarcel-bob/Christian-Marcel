@@ -7,7 +7,7 @@
 
     <title>Portfolio Pessoal</title>
 
-    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="/resources/css/index.css">
 
 
 </head>
@@ -106,7 +106,7 @@
                 <div class="habilidade">
 
                     HTML
-                    
+
                 </div>
 
 
@@ -313,12 +313,12 @@
 
     <footer>
 
-<p>
+        <p>
 
-Desenvolvido por <a href="https://Christian-Marcel">Christian Marcel</a>
+            Desenvolvido por <a href="https://Christian-Marcel">Christian Marcel</a>
 
 
-</p>
+        </p>
 
 
     </footer>

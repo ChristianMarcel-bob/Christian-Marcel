@@ -15,9 +15,9 @@
         exit;
     }
 
-    // JA JA EXPLICO
+    // 
     [$controller, $acao] = $rotas[$metodo][$rota];
 
-    // JA JA EXPLICO
+    // 
     $controller->$acao();
 ?>
