@@ -25,113 +25,93 @@ abstract class Personagem
     }
 
     //getter
-    public function getVida()  {
-return $this->vida;
-
-
+    public function getVida()
+    {
+        return $this->vida;
     }
 
-//setter
-public function  setVida($vida) {
-
-
-    if ($vida < 0 );  {
-        echo "A vida não pode ser negativa!\n"
-
-return;
-
-    }
-
-$this->vida = $vida;
-
-}
-
-
-
-    abstract public function atacar()
+    //setter
+    public function setVida($vida)
     {
 
 
-        echo "$this->nome realizou um ataque";
+        if ($vida < 0); {
+            echo "A vida não pode ser negativa!\n";
+
+            return;
+        }
+
+        $this->vida = $vida;
     }
+
+
+
+    abstract public function atacar();
 }
-
-$Christian = new Personagem("Christian", 100, 10);
-
-$Christian->setVida(50);
-
-
-$Lucas = new personagem("Lucas", 90, 10);
-$Gustavo = new personagem("Gustavo", 80, 10);
-
-$Christian->atacar(); // metodo proprio
 
 class Guerreiro extends Personagem
 {
 
+    public function atacar()
+    {
+        echo "$this->nome levantou o escudo!";
+    }
+
     public function defender()
     {
-
         echo "$this->nome levantou o escudo!";
     }
 }
-class Mago extends Personagem {
+class Mago extends Personagem
+{
 
 
-public function lancarMagia()  {
+    public function atacar()
+    {
 
-echo "$this->nome lançou uma bola de fogo!\n";
-
-
+        echo "$this->nome lançou uma bola de fogo!\n";
+    }
 }
 
+class Curandeiro extends Personagem
+{
 
-}
+    public function atacar()
+    {
 
-class Curandeiro extends Personagem {
+        echo "$this->nome Atacou com uma faca!\n";
+    }
 
-public function atacar()  {
-
-echo "$this->nome Atacou com uma faca!\n";
-
-
-
-}
-
-public function curar(Personagem $alvo, int $quantidade) {
+    public function curar(Personagem $alvo, int $quantidade)
+    {
 
 
-$novaVida = $alvo->getVida() + $quantidade;
-$alvo->setVida($novaVida);
-echo "$this->nome curou {$alvo->nome} em $quantidade HP!\n";
-}
-
-
+        $novaVida = $alvo->getVida() + $quantidade;
+        $alvo->setVida($novaVida);
+        echo "$this->nome curou {$alvo->nome} em $quantidade HP!\n";
+    }
 }
 
 
 
-$guerreiro = new Guerreiro("Christian", 100, 10);
+$guerreiro = new Guerreiro("Christian", 50, 10);
 $mago = new Mago("Lucas", 50, 10);
 $curandeiro = new Curandeiro("Gustavo", 30, 3);
 
-$guerreiro = new Guerreiro("Christian", 100, 10);
+$personagens = [$guerreiro, $mago, $curandeiro];
 
-$personagens = [$guerreiro, $mago, $personagem];
+foreach ($personagens as $p) {
 
-foreach($personagens as $p)  {
-
-$p->atacar();
-
-
+    $p->atacar();
 }
 
+$guerreiro->getVida();
+
+$curandeiro->curar($guerreiro, 30);
+
+$guerreiro->getVida();
+
 // https: //look.devlook.xyz/resources/views/projetos/poo.php
-
-$guerreiro->atacar(); //método herdado
-$guerreiro->defender(); // método próprio
-
-
 
 //1. o que é uma classe?
 //um molde para criar objetos
@@ -144,7 +124,3 @@ $guerreiro->defender(); // método próprio
 
 //4. O que significa extends?
 //Herdar características e métodos de outra classe
-
-
-
-?>
