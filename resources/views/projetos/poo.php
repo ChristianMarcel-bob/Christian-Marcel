@@ -10,7 +10,7 @@
 //ABSTRAÇÃO
 //Mostrar o que é necessário e esconder detalhes complicados de funcionamentos.
 
-class Personagem
+abstract class Personagem
 {
 
     public $nome;
@@ -38,15 +38,17 @@ public function  setVida($vida) {
     if ($vida < 0 );  {
         echo "A vida não pode ser negativa!\n"
 
+return;
 
     }
 
+$this->vida = $vida;
 
 }
 
-$this->vida = $vida;
 
-    public function atacar()
+
+    abstract public function atacar()
     {
 
 
@@ -86,10 +88,32 @@ echo "$this->nome lançou uma bola de fogo!\n";
 
 }
 
+class Curandeiro extends Personagem {
+
+public function atacar()  {
+
+echo "$this->nome Atacou com uma faca!\n";
+
+
+
+}
+
+public function curar(Personagem $alvo, int $quantidade) {
+
+
+$novaVida = $alvo->getVida() + $quantidade;
+$alvo->setVida($novaVida);
+echo "$this->nome curou {$alvo->nome} em $quantidade HP!\n";
+}
+
+
+}
+
+
 
 $guerreiro = new Guerreiro("Christian", 100, 10);
 $mago = new Mago("Lucas", 50, 10);
-$personagem = new Personagem("Gustavo", 30, 3);
+$curandeiro = new Curandeiro("Gustavo", 30, 3);
 
 $guerreiro = new Guerreiro("Christian", 100, 10);
 
