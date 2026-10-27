@@ -1,6 +1,6 @@
 <?php
 
-class LoginController
+class JsonController
 {
 
     public function index()
