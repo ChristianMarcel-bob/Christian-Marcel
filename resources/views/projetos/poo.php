@@ -93,6 +93,17 @@ $personagem = new Personagem("Gustavo", 30, 3);
 
 $guerreiro = new Guerreiro("Christian", 100, 10);
 
+$personagens = [$guerreiro, $mago, $personagem];
+
+foreach($personagens as $p)  {
+
+$p->atacar();
+
+
+}
+
+// https: //look.devlook.xyz/resources/views/projetos/poo.php
+
 $guerreiro->atacar(); //método herdado
 $guerreiro->defender(); // método próprio
 
