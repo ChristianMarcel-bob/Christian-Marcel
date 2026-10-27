@@ -35,7 +35,7 @@ abstract class Personagem
     {
 
 
-        if ($vida < 0); {
+        if ($vida < 0) {
             echo "A vida não pode ser negativa!\n";
 
             return;
