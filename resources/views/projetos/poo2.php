@@ -147,7 +147,7 @@ function escapar($texto)
 
     <h1>Controle de produção industrial</h1>
 
-    <form action="index.php" method="POST">
+    <form poo2.php method="POST">
 
         <label for="nome">Nome da máquina:</label>
         <input type="text" id="nome" name="nome"
