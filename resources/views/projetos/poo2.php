@@ -131,16 +131,46 @@ function escapar($texto)
         "UTF-8"
     );
 }
+?>
+
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sistema de produção</title>
 </head>
 <body>
 
-    
+<div class="container">
+
+    <h1>Controle de produção industrial</h1>
+
+    <form action="index.php" method="POST">
+
+        <label for="nome">Nome da máquina:</label>
+        <input type="text" id="nome" name="nome"
+               placeholder="Nome da máquina" required>
+
+        <label for="tipo">Tipo de máquina:</label>
+        <select id="tipo" name="tipo" required>
+            <option value="">Selecione</option>
+            <option value="esteira">Esteira</option>
+            <option value="prensa">Prensa</option>
+            <option value="robosoldagem">Robô de soldagem</option>
+        </select>
+
+        <label for="quantidade">Quantidade produzida:</label>
+        <input type="number" id="quantidade" name="quantidade"
+               min="1" required>
+
+        <button type="submit">Cadastrar máquina</button>
+
+    </form>
+
+</div>
+
 </body>
 </html>
+
