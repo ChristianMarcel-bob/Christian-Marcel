@@ -131,6 +131,8 @@ function escapar($texto)
         "UTF-8"
     );
 }
+
+ require __DIR__ . "/../../../resources/views/projetos/poo2.php"
 ?>
 
 
@@ -155,7 +157,7 @@ function escapar($texto)
 
         <label for="tipo">Tipo de máquina:</label>
         <select id="tipo" name="tipo" required>
-            <option value=>Selecione</option>
+            <option value="">Selecione</option>
             <option value="esteira">Esteira</option>
             <option value="prensa">Prensa</option>
             <option value="robosoldagem">Robô de soldagem</option>
@@ -168,6 +170,7 @@ function escapar($texto)
         <button type="submit">Cadastrar máquina</button>
 
     </form>
+
 
 </div>
 
