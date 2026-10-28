@@ -132,7 +132,6 @@ function escapar($texto)
     );
 }
 
-require __DIR__ . "/../../../resources/views/projetos/poo2.php";
 
 ?>
 
