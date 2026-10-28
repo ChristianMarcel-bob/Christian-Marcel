@@ -268,6 +268,33 @@
 
                 </div>
 
+                <div class="projeto-card">
+                    <div class="projeto-numero">
+                        06
+                    </div>
+                    <h3>POO2</h3>
+
+                    <p>
+
+                        Sistema de objetos direcionados
+
+                    </p>
+                    <div class="tecnologia">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>PHP</span>
+                        <span>JSON</span>
+                         <span>POO2</span>
+
+                    </div>
+                    <a href="/index.php?rota=poo2" class="link-projeto">
+                        Ver projeto ->
+
+                    </a>
+
+                </div>
+
 
 
 
