@@ -154,7 +154,7 @@
                         <span>PHP</span>
 
                     </div>
-                    <a href="{{ route('') }}" class="link-projeto">
+                    <a href="{{ route('helpdesk') }}" class="link-projeto">
                         Ver projeto ->
 
                     </a>
@@ -181,7 +181,7 @@
                         <span>PHP</span>
 
                     </div>
-                    <a href="/index.php?rota=jogos" class="link-projeto">
+                    <a href="{{ route('helpdesk') }}" class="link-projeto">
                         Ver projeto ->
 
                     </a>
@@ -208,7 +208,7 @@
                         <span>PHP</span>
 
                     </div>
-                    <a href="/index.php?rota=login" class="link-projeto">
+                    <a href="{{ route('helpdesk') }}" class="link-projeto">
                         Ver projeto ->
 
                     </a>
@@ -235,7 +235,7 @@
                         <span>PHP</span>
 
                     </div>
-                    <a href="/index.php?rota=notas" class="link-projeto">
+                    <a href="{{ route('helpdesk') }}" class="link-projeto">
                         Ver projeto ->
 
                     </a>
@@ -263,7 +263,7 @@
                         <span>JSON</span>
 
                     </div>
-                    <a href="/index.php?rota=json" class="link-projeto">
+                    <a href="{{ route('helpdesk') }}" class="link-projeto">
                         Ver projeto ->
 
                     </a>
@@ -290,7 +290,7 @@
                          <span>POO2</span>
 
                     </div>
-                    <a href="/index.php?rota=poo2" class="link-projeto">
+                    <a href="{{ route('helpdesk') }}" class="link-projeto">
                         Ver projeto ->
 
                     </a>

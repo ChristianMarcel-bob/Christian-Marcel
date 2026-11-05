@@ -15,7 +15,7 @@ return [
         'jogos' => [new JogosController(), 'index'],
         'idade' => [new IdadeController(), 'index'],
         'notas' => [new NotasController(), 'index'],
-        'poo' => [new Poo2Controller(), 'index']
+        'poo2' => [new Poo2Controller(), 'index']
     ],
 
     'POST' => [
@@ -23,6 +23,6 @@ return [
         'jogos' => [new JogosController(), 'index'],
         'idade' => [new IdadeController(), 'index'],
         'notas' => [new NotasController(), 'index'],
-        'poo' => [new Poo2Controller(), 'index']
+        'poo2' => [new Poo2Controller(), 'index']
     ]
 ];
