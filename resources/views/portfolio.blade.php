@@ -7,6 +7,8 @@
 
     <title>Portfolio Pessoal</title>
 
+    @vite(['resources/css/index.css'])
+
     <link rel="stylesheet" href="/resources/css/index.css">
 
 
@@ -152,7 +154,7 @@
                         <span>PHP</span>
 
                     </div>
-                    <a href="/index.php?rota=idade" class="link-projeto">
+                    <a href="{{ route('') }}" class="link-projeto">
                         Ver projeto ->
 
                     </a>
