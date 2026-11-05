@@ -7,7 +7,7 @@ use App\Models\Chamado;
 class HelpdeskController extends Controller
 {
 
-    public function index();
+    public function index()
 
   {
           $model = new Chamado();
