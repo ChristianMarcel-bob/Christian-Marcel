@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HelpdeskController;
 
-Route;;get('/helpdesk', function() {
+Route::get('/helpdesk', function() {
 return view('portfolio');
 
 
