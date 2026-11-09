@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\controller;
 use App\Models\Chamado;
-class HelpdeskController
+class HelpdeskController extends Controller
+
 
 {
 
