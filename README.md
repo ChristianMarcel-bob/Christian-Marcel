@@ -56,3 +56,19 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+ALTEREI COISAS NO COMPUTADOR:
+
+GIT COMMIT E GIT PUSH PELO GITHUB DESKTOP´
+DEPOIS GIT PULL NA VPS
+
+_________________________________________
+
+ALTEREI COISAS NA VPS:
+GIT ADD . | GIT COMMIT -M "" | GIT PUSH ORIGIN MAIN
+
+DEPOIS:
+GIT PULL NO COMPUTADOR
+
+__________________________________________
